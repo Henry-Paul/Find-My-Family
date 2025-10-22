@@ -132,63 +132,62 @@
                 <div class="w-full md:w-1/2 flex flex-col gap-6">
                     
                     <!-- Image Slider -->
-                    <div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden">
-                        <div class="media-frame">
-                            <div class="swiper imageSwiper w-full h-full">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <!-- Placeholder Image 1 -->
-                                        <img class="w-full h-full object-cover" src="https://placehold.co/800x800/2563eb/ffffff?text=Missing+Person+1" alt="Missing Person Photo 1" loading="lazy">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- Placeholder Image 2 -->
-                                        <img class="w-full h-full object-cover" src="https://placehold.co/800x800/dc2626/ffffff?text=Missing+Person+2" alt="Missing Person Photo 2" loading="lazy">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- Placeholder Image 3 -->
-                                        <img class="w-full h-full object-cover" src="https://placehold.co/800x800/f59e0b/ffffff?text=Missing+Person+3" alt="Missing Person Photo 3" loading="lazy">
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
+<div class="image-slider-container">
+    <div class="slider-frame">
+        <div class="swiper imageSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets/images/photo1.jpg" alt="Missing Person Photo 1" loading="lazy" onerror="this.src='https://placehold.co/800x600/2563eb/ffffff?text=Photo+1+Not+Found'">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/photo2.jpg" alt="Missing Person Photo 2" loading="lazy" onerror="this.src='https://placehold.co/800x600/dc2626/ffffff?text=Photo+2+Not+Found'">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/photo3.jpg" alt="Missing Person Photo 3" loading="lazy" onerror="this.src='https://placehold.co/800x600/f59e0b/ffffff?text=Photo+3+Not+Found'">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/photo4.jpg" alt="Missing Person Photo 4" loading="lazy" onerror="this.src='https://placehold.co/800x600/10b981/ffffff?text=Photo+4+Not+Found'">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
 
-                    <!-- Video Slider -->
-                    <div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden">
-                        <div class="media-frame relative">
-                            <div class="swiper videoSwiper w-full h-full">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="flex flex-col items-center justify-center w-full h-full text-white bg-gray-700 p-4">
-                                            <i class="fas fa-video text-4xl text-gray-400 mb-4"></i>
-                                            <p class="font-semibold text-lg">Video 1: Last known footage</p>
-                                            <small class="text-gray-400">Placeholder for actual video asset</small>
-                                        </div>
-                                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-3 text-sm z-10">
-                                            <i class="fas fa-play-circle mr-2"></i> Last known footage - October 01, 2025
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="flex flex-col items-center justify-center w-full h-full text-white bg-gray-700 p-4">
-                                            <i class="fas fa-video text-4xl text-gray-400 mb-4"></i>
-                                            <p class="font-semibold text-lg">Video 2: Family gathering</p>
-                                            <small class="text-gray-400">Placeholder for actual video asset</small>
-                                        </div>
-                                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-3 text-sm z-10">
-                                            <i class="fas fa-play-circle mr-2"></i> Family gathering - October 2025
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
+<!-- Video Slider -->
+<div class="video-slider-container">
+    <div class="video-frame">
+        <div class="swiper videoSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video controls poster="./assets/images/video1-poster.jpg" onerror="this.parentElement.innerHTML = '<div class=\"video-placeholder\"><i class=\"fas fa-video\" style=\"font-size: 3rem; color: #666; margin-bottom: 1rem;\"></i><p>Video 1: Last known footage</p><small>Video file not found</small></div>' + this.parentElement.innerHTML">
+                        <source src="./assets/videos/video1.mp4" type="video/mp4">
+                        <source src="./assets/videos/video1.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-caption">
+                        <i class="fas fa-play-circle"></i> Last known footage - October 15, 2023
                     </div>
                 </div>
+                <div class="swiper-slide">
+                    <video controls poster="./assets/images/video2-poster.jpg" onerror="this.parentElement.innerHTML = '<div class=\"video-placeholder\"><i class=\"fas fa-video\" style=\"font-size: 3rem; color: #666; margin-bottom: 1rem;\"></i><p>Video 2: Family gathering</p><small>Video file not found</small></div>' + this.parentElement.innerHTML">
+                        <source src="./assets/videos/video2.mp4" type="video/mp4">
+                        <source src="./assets/videos/video2.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-caption">
+                        <i class="fas fa-play-circle"></i> Family gathering - September 2023
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
 
                 <!-- Details Column -->
                 <div class="w-full md:w-1/2 pt-4 md:pt-0">
