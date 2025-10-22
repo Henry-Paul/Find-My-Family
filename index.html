@@ -131,65 +131,64 @@
                 <!-- Media Column -->
                 <div class="w-full md:w-1/2 flex flex-col gap-6">
                     
-                    can you update the link to the image and video to pull from the GitHub Images folder. 
-
-<!-- Image Slider -->
-<div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden">
-    <div class="media-frame">
-        <div class="swiper imageSwiper w-full h-full">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="./assets/images/photo1.jpg" alt="Missing Person Photo 1" loading="lazy" onerror="this.src='https://placehold.co/800x800/2563eb/ffffff?text=Photo+1+Not+Found'">
-                </div>
-                <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="./assets/images/photo2.jpg" alt="Missing Person Photo 2" loading="lazy" onerror="this.src='https://placehold.co/800x800/dc2626/ffffff?text=Photo+2+Not+Found'">
-                </div>
-                <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="./assets/images/photo3.jpg" alt="Missing Person Photo 3" loading="lazy" onerror="this.src='https://placehold.co/800x800/f59e0b/ffffff?text=Photo+3+Not+Found'">
-                </div>
-                <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="./assets/images/photo4.jpg" alt="Missing Person Photo 4" loading="lazy" onerror="this.src='https://placehold.co/800x800/10b981/ffffff?text=Photo+4+Not+Found'">
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-</div>
+                    <!-- Image Slider -->
+                    <div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden">
+                        <div class="media-frame">
+                            <div class="swiper imageSwiper w-full h-full">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="w-full h-full object-cover" src="./assets/images/photo1.jpg" alt="Missing Person Photo 1" loading="lazy" onerror="this.src='https://placehold.co/800x800/2563eb/ffffff?text=Photo+1+Not+Found'">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="w-full h-full object-cover" src="./assets/images/photo2.jpg" alt="Missing Person Photo 2" loading="lazy" onerror="this.src='https://placehold.co/800x800/dc2626/ffffff?text=Photo+2+Not+Found'">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="w-full h-full object-cover" src="./assets/images/photo3.jpg" alt="Missing Person Photo 3" loading="lazy" onerror="this.src='https://placehold.co/800x800/f59e0b/ffffff?text=Photo+3+Not+Found'">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="w-full h-full object-cover" src="./assets/images/photo4.jpg" alt="Missing Person Photo 4" loading="lazy" onerror="this.src='https://placehold.co/800x800/10b981/ffffff?text=Photo+4+Not+Found'">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Video Slider -->
-<div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden">
-    <div class="media-frame relative">
-        <div class="swiper videoSwiper w-full h-full">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <video class="w-full h-full object-cover" controls poster="./assets/images/video1-poster.jpg" onerror="this.parentElement.innerHTML = '<div class=\"flex flex-col items-center justify-center w-full h-full text-white bg-gray-700 p-4\"><i class=\"fas fa-video text-4xl text-gray-400 mb-4\"></i><p class=\"font-semibold text-lg\">Video 1: Last known footage</p><small class=\"text-gray-400\">Video file not found</small></div>' + this.parentElement.innerHTML">
-                        <source src="./assets/videos/video1.mp4" type="video/mp4">
-                        <source src="./assets/videos/video1.webm" type="video/webm">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-3 text-sm z-10">
-                        <i class="fas fa-play-circle mr-2"></i> Last known footage - October 01, 2025
+                    <div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden">
+                        <div class="media-frame relative">
+                            <div class="swiper videoSwiper w-full h-full">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <video controls poster="./assets/images/video1-poster.jpg" onerror="this.parentElement.innerHTML = '<div class=\"flex flex-col items-center justify-center w-full h-full text-white bg-gray-700 p-4\"><i class=\"fas fa-video text-4xl text-gray-400 mb-4\"></i><p class=\"font-semibold text-lg\">Video 1: Last known footage</p><small class=\"text-gray-400\">Video file not found</small></div>' + this.parentElement.innerHTML">
+                                            <source src="./assets/videos/video1.mp4" type="video/mp4">
+                                            <source src="./assets/videos/video1.webm" type="video/webm">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-3 text-sm z-10">
+                                            <i class="fas fa-play-circle mr-2"></i> Last known footage - October 01, 2025
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <video controls poster="./assets/images/video2-poster.jpg" onerror="this.parentElement.innerHTML = '<div class=\"flex flex-col items-center justify-center w-full h-full text-white bg-gray-700 p-4\"><i class=\"fas fa-video text-4xl text-gray-400 mb-4\"></i><p class=\"font-semibold text-lg\">Video 2: Family gathering</p><small class=\"text-gray-400\">Video file not found</small></div>' + this.parentElement.innerHTML">
+                                            <source src="./assets/videos/video2.mp4" type="video/mp4">
+                                            <source src="./assets/videos/video2.webm" type="video/webm">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-3 text-sm z-10">
+                                            <i class="fas fa-play-circle mr-2"></i> Family gathering - October 2025
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <video class="w-full h-full object-cover" controls poster="./assets/images/video2-poster.jpg" onerror="this.parentElement.innerHTML = '<div class=\"flex flex-col items-center justify-center w-full h-full text-white bg-gray-700 p-4\"><i class=\"fas fa-video text-4xl text-gray-400 mb-4\"></i><p class=\"font-semibold text-lg\">Video 2: Family gathering</p><small class=\"text-gray-400\">Video file not found</small></div>' + this.parentElement.innerHTML">
-                        <source src="./assets/videos/video2.mp4" type="video/mp4">
-                        <source src="./assets/videos/video2.webm" type="video/webm">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-3 text-sm z-10">
-                        <i class="fas fa-play-circle mr-2"></i> Family gathering - October 2025
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-</div>
 
                 <!-- Details Column -->
                 <div class="w-full md:w-1/2 pt-4 md:pt-0">
@@ -521,7 +520,7 @@
                         } else if (lowerMsg.includes('contact') || lowerMsg.includes('call')) {
                             botText = "You can find direct contact details (WhatsApp and Phone) for the family and police in the 'Urgent Contacts' section above.";
                         } else if (lowerMsg.includes('where') || lowerMsg.includes('location')) {
-                            botText = "Johnathan was last seen in Central Park, New York on October 15, 2023. More details are in the Information section.";
+                            botText = "Julius was last seen in Sanath Nagar, Hyderabad on October 1, 2025. More details are in the Information section.";
                         } else if (lowerMsg.includes('help') || lowerMsg.includes('what can i do')) {
                             botText = "You can help by: 1) Sharing this page widely (use the QR code), 2) Reporting any sightings via the form, and 3) Reviewing the photo gallery.";
                         } 
